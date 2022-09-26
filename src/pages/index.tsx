@@ -3,7 +3,8 @@ import { styled } from "../styles";
 
 const Button = styled("button", {
   fontSize: "1rem",
-  backgroundColor: "$rocketseat",
+  backgroundColor: "$green300",
+  border: "none",
 });
 
 const Home: NextPage = () => {
