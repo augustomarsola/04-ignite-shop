@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import { globalStyle } from "../styles/global";
 import { Container, Header } from "../styles/pages/app";
 import logoImg from "../assets/logo.svg";
-import Image from "next/image";
+import Image from "next/future/image";
 
 globalStyle();
 

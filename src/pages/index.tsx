@@ -1,19 +1,38 @@
-import type { NextPage } from "next";
-import { styled } from "../styles";
+import Image from "next/future/image";
+import camiseta1 from "../assets/camisetas/1.png";
+import camiseta2 from "../assets/camisetas/2.png";
+import camiseta3 from "../assets/camisetas/3.png";
+import { HomeContainer, Product } from "../styles/pages/home";
 
-const Button = styled("button", {
-  fontSize: "1rem",
-  backgroundColor: "$green300",
-  border: "none",
-});
-
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <div>
-      Home
-      <Button>Aqui eu apareço</Button>
-    </div>
-  );
-};
+    <HomeContainer>
+      <Product>
+        <Image
+          src={camiseta1}
+          width={520}
+          height={480}
+          alt="Camiseta à venda"
+        />
 
-export default Home;
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+      <Product>
+        <Image
+          src={camiseta2}
+          width={520}
+          height={480}
+          alt="Camiseta à venda"
+        />
+
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+    </HomeContainer>
+  );
+}
